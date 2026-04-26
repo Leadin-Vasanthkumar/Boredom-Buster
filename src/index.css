@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-atma: "Atma", system-ui, sans-serif;
+
+  --color-main: var(--main);
+  --color-overlay: var(--overlay);
+  --color-bg: var(--bg);
+  --color-bw: var(--bw);
+  --color-blank: var(--blank);
+  --color-text: var(--text);
+  --color-mtext: var(--mtext);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-ring-offset: var(--ring-offset);
+  --color-secondary-black: #212121;
+
+  --radius-base: 5px;
+
+  --shadow-shadow: var(--shadow);
+
+  --translate-box-shadow-x: 4.8px;
+  --translate-box-shadow-y: 4.8px;
+  --translate-reverse-box-shadow-x: -4.8px;
+  --translate-reverse-box-shadow-y: -4.8px;
+
+  --font-weight-base: 500;
+  --font-weight-heading: 700;
+}
+
+:root {
+  --main: #ffbcd9;
+  --overlay: rgba(0, 0, 0, 0.8);
+  --bg: #dfe5f2;
+  --bw: #fff;
+  --blank: #000;
+  --border: #000;
+  --text: #000;
+  --mtext: #000;
+  --ring: #000;
+  --ring-offset: #fff;
+
+  --border-radius: 5px;
+  --box-shadow-x: 4.8px;
+  --box-shadow-y: 4.8px;
+  --reverse-box-shadow-x: -4.8px;
+  --reverse-box-shadow-y: -4.8px;
+  --base-font-weight: 500;
+  --heading-font-weight: 700;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
+
+.dark {
+  --bg: #272933;
+  --bw: #212121;
+  --blank: #fff;
+  --border: #000;
+  --text: #e6e6e6;
+  --mtext: #000;
+  --ring: #fff;
+  --ring-offset: #000;
+
+  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+}
