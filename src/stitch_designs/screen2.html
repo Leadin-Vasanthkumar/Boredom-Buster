@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pick Your Vibe - I am Bored</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&amp;family=DM+Sans:wght@500&amp;family=Nunito:wght@400;700&amp;family=Be_Vietnam_Pro:ital,wght@0,700;0,900;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"inverse-on-surface": "#f9eef0", "surface-container-high": "#f1e5e8", "on-primary": "#ffffff", "surface-dim": "#e2d7da", "on-secondary-fixed-variant": "#174c5f", "surface-container-low": "#fcf1f3", primary: "#844d68", "secondary-container": "#b6e7fd", "surface-container-highest": "#ebe0e2", outline: "#827379", "primary-fixed": "#ffd8e8", "tertiary-fixed": "#c7edb3", "surface-container-lowest": "#ffffff", "surface-tint": "#844d68", "on-secondary-fixed": "#001f29", "secondary-fixed-dim": "#9dcee3", tertiary: "#466739", "tertiary-container": "#acd199", error: "#ba1a1a", background: "#fff8f8", "primary-fixed-dim": "#f7b3d2", "surface-container": "#f6ebed", secondary: "#336477", "on-primary-container": "#76425c", surface: "#fff8f8", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "on-primary-fixed": "#350b24", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#2f4e23", "surface-variant": "#ebe0e2", "on-primary-fixed-variant": "#693650", "tertiary-fixed-dim": "#acd199", "error-container": "#ffdad6", "on-tertiary-fixed": "#042100", "on-secondary-container": "#38697c", "secondary-fixed": "#bbeaff", "on-tertiary-container": "#3b5a2e", "primary-container": "#f7b3d2", "on-surface": "#1f1a1c", "surface-bright": "#fff8f8", "on-background": "#1f1a1c", "inverse-primary": "#f7b3d2", "outline-variant": "#d4c2c8", "on-surface-variant": "#504348", "inverse-surface": "#352f31"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}, spacing: {md: "24px", margin: "32px", sm: "12px", xs: "4px", lg: "40px", gutter: "24px", base: "8px", xl: "64px"}, fontFamily: {caption: ["DM Sans"], "body-reg": ["Nunito"], "display-lg": ["Barlow Condensed"], "body-bold": ["Nunito"], "headline-md": ["Barlow Condensed"], "button-text": ["Barlow Condensed"], "label-sm": ["DM Sans"], headline: ["Be Vietnam Pro"], display: ["Be Vietnam Pro"], body: ["Plus Jakarta Sans"], label: ["Plus Jakarta Sans"]}, fontSize: {caption: ["12px", {lineHeight: "1.2", fontWeight: "500"}], "body-reg": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "display-lg": ["48px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700"}], "body-bold": ["16px", {lineHeight: "1.6", fontWeight: "700"}], "headline-md": ["32px", {lineHeight: "1.2", fontWeight: "700"}], "button-text": ["18px", {lineHeight: "1", fontWeight: "700"}], "label-sm": ["14px", {lineHeight: "1.4", fontWeight: "500"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Animated gradient base for the toy-box feel */
+        .bg-animated-gradient {
+            background: linear-gradient(-45deg, #fff8f8, #f7b3d2, #b6e7fd, #fff8f8);
+            background-size: 400% 400%;
+        }
+    </style>
+</head>
+<body class="bg-animated-gradient min-h-screen text-on-surface font-body-reg flex overflow-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex flex-col w-64 h-screen p-6 bg-sky-200 dark:bg-sky-900 border-r-2 border-black shadow-[5px_0px_0px_0px_rgba(0,0,0,1)] z-40 flex-shrink-0">
+<div class="mb-xl">
+<h1 class="text-xl font-black text-black font-['Be_Vietnam_Pro'] tracking-tight">Boredom Cure</h1>
+<p class="font-caption text-caption text-on-surface-variant mt-xs">Find your next vibe</p>
+</div>
+<ul class="flex flex-col gap-sm flex-1">
+<!-- Active Item: Home -->
+<li>
+<a class="flex items-center gap-sm px-4 py-3 font-['Be_Vietnam_Pro'] font-bold rounded-xl bg-pink-400 border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] translate-x-1 transition-transform text-black" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+                    Home
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-4 py-3 font-['Be_Vietnam_Pro'] font-bold rounded-xl text-black dark:text-white hover:bg-white/20 hover:translate-x-2 transition-transform active:translate-x-0 active:shadow-none" href="#">
+<span class="material-symbols-outlined text-2xl">history</span>
+                    History
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-4 py-3 font-['Be_Vietnam_Pro'] font-bold rounded-xl text-black dark:text-white hover:bg-white/20 hover:translate-x-2 transition-transform active:translate-x-0 active:shadow-none" href="#">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+                    Favorites
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-sm px-4 py-3 font-['Be_Vietnam_Pro'] font-bold rounded-xl text-black dark:text-white hover:bg-white/20 hover:translate-x-2 transition-transform active:translate-x-0 active:shadow-none" href="#">
+<span class="material-symbols-outlined text-2xl">auto_awesome</span>
+                    Surprise Me
+                </a>
+</li>
+</ul>
+<div class="mt-auto flex items-center justify-center">
+<div aria-label="User profile playful avatar" class="w-12 h-12 rounded-full border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] bg-primary-container overflow-hidden flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-container">face</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<div class="flex-1 flex flex-col h-screen overflow-y-auto relative pb-32 md:pb-0">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 bg-white dark:bg-zinc-900 docked full-width top-0 border-b-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-30 sticky">
+<div class="text-2xl font-black text-black dark:text-white italic font-['Be_Vietnam_Pro'] tracking-tighter uppercase">
+<span class="text-pink-400 dark:text-pink-300">I am Bored</span>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-2 rounded-full border-2 border-transparent text-black dark:text-white font-bold hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none bg-surface-container">
+<span class="material-symbols-outlined block">account_circle</span>
+</button>
+<button class="p-2 rounded-full border-2 border-transparent text-black dark:text-white font-bold hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none bg-surface-container">
+<span class="material-symbols-outlined block">settings</span>
+</button>
+</div>
+</header>
+<!-- Page Content: Pick Your Vibe -->
+<main class="flex-1 w-full max-w-5xl mx-auto px-margin py-xl flex flex-col items-center justify-center">
+<!-- Hero Action -->
+<div class="text-center mb-xl">
+<button class="bg-primary text-on-primary border-2 border-black rounded-full px-xl py-md font-button-text text-display-lg shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[5px] active:translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.6,0.32,1.6)]">
+                    ROLL THE DICE
+                </button>
+</div>
+<!-- Vibe Selection Section -->
+<div class="w-full flex flex-col items-center gap-md">
+<p class="font-caption text-caption text-outline uppercase tracking-wider">what kind of bored are you?</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg w-full">
+<!-- Card 1: Time Pass -->
+<button class="group bg-primary-container border-2 border-black rounded-[24px] p-lg text-left shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:bg-secondary-container hover:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[5px] active:translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.6,0.32,1.6)] flex flex-col gap-sm">
+<div class="w-16 h-16 rounded-full bg-white border-2 border-black flex items-center justify-center mb-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface">shuffle</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Time Pass</h2>
+<p class="font-body-reg text-body-reg text-on-surface-variant">just fun. no agenda.</p>
+</button>
+<!-- Card 2: Student -->
+<button class="group bg-primary-container border-2 border-black rounded-[24px] p-lg text-left shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:bg-secondary-container hover:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[5px] active:translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.6,0.32,1.6)] flex flex-col gap-sm">
+<div class="w-16 h-16 rounded-full bg-white border-2 border-black flex items-center justify-center mb-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface">menu_book</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Student</h2>
+<p class="font-body-reg text-body-reg text-on-surface-variant">get smarter without trying.</p>
+</button>
+<!-- Card 3: Builder -->
+<button class="group bg-primary-container border-2 border-black rounded-[24px] p-lg text-left shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:bg-secondary-container hover:shadow-[7px_7px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[5px] active:translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(0.68,-0.6,0.32,1.6)] flex flex-col gap-sm">
+<div class="w-16 h-16 rounded-full bg-white border-2 border-black flex items-center justify-center mb-sm group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-4xl text-on-surface">code</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Builder</h2>
+<p class="font-body-reg text-body-reg text-on-surface-variant">level up your craft.</p>
+</button>
+</div>
+</div>
+</main>
+</div>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex flex-col items-center pb-6 pt-2 px-4 gap-4 bg-white dark:bg-zinc-900 border-t-2 border-black rounded-t-[32px] shadow-[0px_-4px_0px_0px_rgba(0,0,0,1)]">
+<!-- Floating Primary Action -->
+<button class="absolute -top-8 bg-primary text-on-primary border-2 border-black rounded-full px-lg py-sm font-button-text text-button-text shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 active:shadow-none active:translate-x-[5px] active:translate-y-[5px] transition-all uppercase">
+            I am bored
+        </button>
+<div class="flex justify-around w-full mt-8">
+<button class="flex flex-col items-center gap-1 p-2 text-black dark:text-white opacity-70 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95">
+<span class="material-symbols-outlined text-2xl">videogame_asset</span>
+<span class="font-['Be_Vietnam_Pro'] font-bold text-xs uppercase">Time Pass</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-black dark:text-white opacity-70 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95">
+<span class="material-symbols-outlined text-2xl">school</span>
+<span class="font-['Be_Vietnam_Pro'] font-bold text-xs uppercase">Student</span>
+</button>
+<button class="flex flex-col items-center gap-1 p-2 text-black dark:text-white opacity-70 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95">
+<span class="material-symbols-outlined text-2xl">handyman</span>
+<span class="font-['Be_Vietnam_Pro'] font-bold text-xs uppercase">Builder</span>
+</button>
+</div>
+</nav>
+</body></html>

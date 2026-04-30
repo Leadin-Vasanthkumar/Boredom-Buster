@@ -1,66 +1,240 @@
-@import url('https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Nunito:wght@400;700&family=DM+Sans:wght@500&family=Be+Vietnam+Pro:wght@700;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-atma: "Atma", system-ui, sans-serif;
+  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+  --font-be: "Be Vietnam Pro", sans-serif;
 
-  --color-main: var(--main);
-  --color-overlay: var(--overlay);
-  --color-bg: var(--bg);
-  --color-bw: var(--bw);
-  --color-blank: var(--blank);
-  --color-text: var(--text);
-  --color-mtext: var(--mtext);
-  --color-border: var(--border);
-  --color-ring: var(--ring);
-  --color-ring-offset: var(--ring-offset);
-  --color-secondary-black: #212121;
-
-  --radius-base: 5px;
-
-  --shadow-shadow: var(--shadow);
-
-  --translate-box-shadow-x: 4.8px;
-  --translate-box-shadow-y: 4.8px;
-  --translate-reverse-box-shadow-x: -4.8px;
-  --translate-reverse-box-shadow-y: -4.8px;
-
-  --font-weight-base: 500;
-  --font-weight-heading: 700;
+  /* Bubbly Play Palette */
+  --color-primary: #844d68;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #f7b3d2;
+  --color-on-primary-container: #76425c;
+  --color-secondary: #336477;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #b6e7fd;
+  --color-on-secondary-container: #38697c;
+  --color-tertiary: #466739;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #acd199;
+  --color-on-tertiary-container: #3b5a2e;
+  --color-background: #fff8f8;
+  --color-on-background: #1f1a1c;
+  --color-surface: #fff8f8;
+  --color-on-surface: #1f1a1c;
+  --color-surface-variant: #ebe0e2;
+  --color-on-surface-variant: #504348;
+  --color-outline: #827379;
+  --color-surface-lowest: #ffffff;
+  --color-surface-container: #f6ebed;
 }
 
-:root {
-  --main: #ffbcd9;
-  --overlay: rgba(0, 0, 0, 0.8);
-  --bg: #dfe5f2;
-  --bw: #fff;
-  --blank: #000;
-  --border: #000;
-  --text: #000;
-  --mtext: #000;
-  --ring: #000;
-  --ring-offset: #fff;
-
-  --border-radius: 5px;
-  --box-shadow-x: 4.8px;
-  --box-shadow-y: 4.8px;
-  --reverse-box-shadow-x: -4.8px;
-  --reverse-box-shadow-y: -4.8px;
-  --base-font-weight: 500;
-  --heading-font-weight: 700;
-
-  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.dark {
-  --bg: #272933;
-  --bw: #212121;
-  --blank: #fff;
-  --border: #000;
-  --text: #e6e6e6;
-  --mtext: #000;
-  --ring: #fff;
-  --ring-offset: #000;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
+/* ─── Mesh Gradient Background ────────────────────────── */
+.mesh-bg {
+  background-color: #fcf1f3;
+  background-image: 
+      radial-gradient(at 40% 20%, #f7b3d2 0px, transparent 50%),
+      radial-gradient(at 80% 0%, #b6e7fd 0px, transparent 50%),
+      radial-gradient(at 0% 50%, #ffffff 0px, transparent 50%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #fff8f8, #f7b3d2, #b6e7fd, #fff8f8);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ─── Animations & Utilities ────────────────────────────── */
+.bouncy-hover {
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.hard-shadow {
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+.hard-shadow:hover {
+  box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+  transform: scale(1.02);
+}
+
+.hard-shadow:active {
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+  transform: translate(5px, 5px);
+}
+
+.hard-shadow-sm {
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+
+/* ─── Main "I am bored" Button ──────────────────────────── */
+.btn-bored {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary-container);
+  color: var(--color-on-surface);
+  font-family: var(--font-barlow);
+  font-weight: 700;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  text-transform: uppercase;
+  gap: 16px;
+}
+
+/* ─── Large version (landing page) ──────────────────────── */
+.btn-bored--lg {
+  font-size: 42px; /* Increased by 30% from 32px */
+  padding: 31px 83px; /* Increased by 30% from 24px and 64px */
+}
+
+/* ─── Small version (bottom bar) ────────────────────────── */
+.btn-bored--sm {
+  font-size: 20px;
+  padding: 12px 32px;
+}
+
+/* ─── Site Card ─────────────────────────────────────────── */
+.site-card {
+  background: var(--color-surface-lowest);
+  border: 2px solid #000;
+  border-radius: 24px;
+  padding: 32px;
+  max-width: 580px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.site-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 24px;
+}
+.site-card__favicon-container {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  background: var(--color-primary-container);
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.site-card__favicon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.site-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 4px;
+}
+.site-card__name {
+  font-family: var(--font-barlow);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-on-surface);
+  line-height: 1.2;
+}
+.site-card__url {
+  font-family: var(--font-dm);
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-outline);
+  text-decoration: none;
+}
+.site-card__url:hover {
+  text-decoration: underline;
+}
+.site-card__desc {
+  font-family: var(--font-nunito);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-on-surface-variant);
+  margin-top: 12px;
+  line-height: 1.6;
+}
+.site-card__actions {
+  display: flex;
+  justify-content: flex-start;
+}
+.site-card__link {
+  background: var(--color-on-surface);
+  color: var(--color-on-primary);
+  font-family: var(--font-barlow);
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 9999px;
+  padding: 12px 32px;
+  border: 2px solid #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.site-card__link:hover {
+  transform: scale(1.05);
+}
+.site-card__link:active {
+  transform: scale(0.95);
+}
+
+/* ─── Bottom Bar ────────────────────────────────────────── */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-surface-lowest);
+  border-top: 2px solid #000;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  padding: 16px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  z-index: 100;
+  box-shadow: 0px -4px 0px 0px rgba(0,0,0,1);
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .btn-bored--lg {
+    font-size: 24px;
+    padding: 20px 48px;
+  }
 }

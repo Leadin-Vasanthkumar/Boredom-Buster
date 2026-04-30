@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Site Recommendation - I am Bored</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&amp;family=DM+Sans:wght@500&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"inverse-on-surface": "#f9eef0", "surface-container-high": "#f1e5e8", "on-primary": "#ffffff", "surface-dim": "#e2d7da", "on-secondary-fixed-variant": "#174c5f", "surface-container-low": "#fcf1f3", primary: "#844d68", "secondary-container": "#b6e7fd", "surface-container-highest": "#ebe0e2", outline: "#827379", "primary-fixed": "#ffd8e8", "tertiary-fixed": "#c7edb3", "surface-container-lowest": "#ffffff", "surface-tint": "#844d68", "on-secondary-fixed": "#001f29", "secondary-fixed-dim": "#9dcee3", tertiary: "#466739", "tertiary-container": "#acd199", error: "#ba1a1a", background: "#fff8f8", "primary-fixed-dim": "#f7b3d2", "surface-container": "#f6ebed", secondary: "#336477", "on-primary-container": "#76425c", surface: "#fff8f8", "on-secondary": "#ffffff", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "on-primary-fixed": "#350b24", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#2f4e23", "surface-variant": "#ebe0e2", "on-primary-fixed-variant": "#693650", "tertiary-fixed-dim": "#acd199", "error-container": "#ffdad6", "on-tertiary-fixed": "#042100", "on-secondary-container": "#38697c", "secondary-fixed": "#bbeaff", "on-tertiary-container": "#3b5a2e", "primary-container": "#f7b3d2", "on-surface": "#1f1a1c", "surface-bright": "#fff8f8", "on-background": "#1f1a1c", "inverse-primary": "#f7b3d2", "outline-variant": "#d4c2c8", "on-surface-variant": "#504348", "inverse-surface": "#352f31"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}, spacing: {md: "24px", margin: "32px", sm: "12px", xs: "4px", lg: "40px", gutter: "24px", base: "8px", xl: "64px"}, fontFamily: {caption: ["DM Sans"], "body-reg": ["Nunito"], "display-lg": ["Barlow Condensed"], "body-bold": ["Nunito"], "headline-md": ["Barlow Condensed"], "button-text": ["Barlow Condensed"], "label-sm": ["DM Sans"], headline: ["Be Vietnam Pro"], display: ["Be Vietnam Pro"], body: ["Plus Jakarta Sans"], label: ["Plus Jakarta Sans"]}, fontSize: {caption: ["12px", {lineHeight: "1.2", fontWeight: "500"}], "body-reg": ["16px", {lineHeight: "1.6", fontWeight: "400"}], "display-lg": ["48px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700"}], "body-bold": ["16px", {lineHeight: "1.6", fontWeight: "700"}], "headline-md": ["32px", {lineHeight: "1.2", fontWeight: "700"}], "button-text": ["18px", {lineHeight: "1", fontWeight: "700"}], "label-sm": ["14px", {lineHeight: "1.4", fontWeight: "500"}]}}}};</script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-surface-lowest text-on-surface font-body-reg antialiased min-h-screen flex flex-col pb-[120px] md:pb-0 md:flex-row">
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex flex-col w-64 h-screen p-6 bg-secondary-container dark:bg-sky-900 border-r-2 border-black shadow-[5px_0px_0px_0px_rgba(0,0,0,1)] sticky top-0 shrink-0">
+<div class="mb-lg">
+<h1 class="font-headline-md text-headline-md text-black" style="">BOREDOM BUSTER</h1>
+<p class="font-caption text-caption text-on-surface-variant mt-xs" style="">Find your next vibe</p>
+</div>
+<ul class="flex flex-col gap-sm flex-1">
+<li class="" style="">
+<a class="flex items-center gap-sm px-4 py-3 rounded-full text-black dark:text-white hover:bg-white/20 transition-transform hover:translate-x-2 active:translate-x-0 active:shadow-none" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">home</span>
+<span class="font-body-bold text-body-bold" style="">Home</span>
+</a>
+</li>
+<li class="" style="">
+<a class="flex items-center gap-sm px-4 py-3 rounded-full text-black dark:text-white hover:bg-white/20 transition-transform hover:translate-x-2 active:translate-x-0 active:shadow-none" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">history</span>
+<span class="font-body-bold text-body-bold" style="">History</span>
+</a>
+</li>
+<li class="" style="">
+<a class="flex items-center gap-sm px-4 py-3 rounded-full text-black dark:text-white hover:bg-white/20 transition-transform hover:translate-x-2 active:translate-x-0 active:shadow-none" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">favorite</span>
+<span class="font-body-bold text-body-bold" style="">Favorites</span>
+</a>
+</li>
+<li class="" style="">
+<a class="flex items-center gap-sm px-4 py-3 rounded-full bg-primary-container border-2 border-black shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] translate-x-1 text-black font-body-bold text-body-bold active:translate-x-0 active:shadow-none transition-transform" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">auto_awesome</span>
+<span class="" style="">Surprise Me</span>
+</a>
+</li>
+</ul>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col items-center justify-center p-margin w-full">
+<!-- TopAppBar (Mobile Top, Desktop Header) -->
+<header class="md:hidden flex justify-between items-center w-full px-6 py-4 bg-surface-lowest dark:bg-zinc-900 border-b-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] fixed top-0 left-0 z-40">
+<div class="text-2xl font-black text-black dark:text-white italic" style="">I am Bored</div>
+<div class="flex gap-sm">
+<button class="text-primary dark:text-pink-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" style="">
+<span class="material-symbols-outlined text-[24px]" style="">account_circle</span>
+</button>
+<button class="text-primary dark:text-pink-300 hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none" style="">
+<span class="material-symbols-outlined text-[24px]" style="">settings</span>
+</button>
+</div>
+</header>
+<!-- Hero Card Canvas Area -->
+<div class="w-full max-w-[580px] mx-auto mt-xl md:mt-0">
+<div class="bg-surface-lowest border-2 border-black rounded-lg p-md shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-[1.02] transition-all cubic-bezier(0.68,-0.6,0.32,1.6) flex flex-col gap-md">
+<div class="flex items-start gap-md border-b-2 border-black pb-md">
+<!-- Favicon Container -->
+<div class="w-[72px] h-[72px] rounded-DEFAULT bg-primary-container border-2 border-black flex items-center justify-center shrink-0">
+<img alt="App logo icon" class="w-10 h-10 object-contain" data-alt="Playful colorful geometric app logo on clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUX6UOvqUp5KaN_P3QsUNfdplY6OGehXM1-BuFkqgii2C_fAF3eS71MyCLcbsTyIv-rV2y6WUpf1ktwZc1JM2BAv_22Gqf-AvBq_D02UbiIbAnPQbwJ85Pkp8jo7MHdux3qo9Sj3TqwVAxSQ3XE7zgXc1U_IoCI0o1S-WC_Vfe9oe2fFtWXIcVZoAsN6j9WZl_62Z3GzHR45e9aTuLkVxv-aCiyZq1V4TLlJqc_T0_WtgvL4wj5ol46BzIYlFUM2n8X4Pvpph0o8w" style=""/>
+</div>
+<!-- Content Info -->
+<div class="flex-1 flex flex-col gap-xs pt-1">
+<h2 class="font-headline-md text-headline-md text-on-surface m-0" style="">The Useless Web</h2>
+<a class="font-label-sm text-label-sm text-outline hover:underline" href="#" style="">theuselessweb.com</a>
+<p class="font-body-reg text-body-reg text-on-surface-variant mt-sm" style="">Take me to a useless website, please. A classic portal to the weirdest corners of the early internet.</p>
+</div>
+</div>
+<!-- Action Area -->
+<div class="flex justify-start">
+<button class="bg-on-surface text-on-primary font-button-text text-button-text rounded-full px-lg py-sm border-2 border-black hover:scale-105 active:scale-95 transition-transform flex items-center gap-xs" style="">
+                        Open Site
+                        <span class="material-symbols-outlined text-[20px]" style="">arrow_outward</span>
+</button>
+</div>
+</div>
+</div><div class="mt-12 flex justify-center w-full">
+<button class="bg-primary-container text-on-surface font-button-text text-button-text px-16 py-6 rounded-full border-2 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:scale-[1.02] transition-all cubic-bezier(0.68,-0.6,0.32,1.6) active:shadow-none active:translate-x-[5px] active:translate-y-[5px] flex items-center gap-3 text-3xl font-black uppercase tracking-wider" style="">Next <span class="material-symbols-outlined text-4xl">arrow_forward</span></button>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex flex-col items-center pb-6 pt-2 px-4 gap-4 bg-surface-lowest dark:bg-zinc-900 border-t-2 border-black rounded-t-[32px] shadow-[0px_-4px_0px_0px_rgba(0,0,0,1)]">
+<!-- Primary FAB action -->
+<button class="bg-primary text-on-primary border-2 border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)] rounded-full px-xl py-sm font-button-text text-button-text absolute -top-8 hover:translate-y-[-2px] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] active:shadow-none transition-all" style="">
+            I am bored
+        </button>
+<div class="flex justify-between items-center w-full max-w-sm mt-8">
+<a class="flex flex-col items-center gap-1 text-black dark:text-white opacity-70 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">videogame_asset</span>
+<span class="font-caption text-caption uppercase" style="">Time Pass</span>
+</a>
+<a class="flex flex-col items-center gap-1 bg-primary-container text-black border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-full px-4 py-1 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">school</span>
+<span class="font-caption text-caption uppercase" style="">Student</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black dark:text-white opacity-70 hover:scale-110 transition-transform cubic-bezier(0.68,-0.6,0.32,1.6) active:scale-95" href="#" style="">
+<span class="material-symbols-outlined text-[24px]" style="">handyman</span>
+<span class="font-caption text-caption uppercase" style="">Builder</span>
+</a>
+</div>
+</nav>
+</body></html>
